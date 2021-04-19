@@ -22,6 +22,7 @@ As the used information is only for consultation, I thought it not necessary to 
 > I made a mistake when scripting data preprocessing using Python. When I reviewed the rules and saw that Python was not among the available technologies, there was no more time to fix it. My mistake.
 
 ### Running
+At directory  *"api/"*
 
 > This project uses *"movies.csv"* and *"ratings.csv"* files from [MovieLens](https://grouplens.org/datasets/movielens/) dataset. This dataset files is necessary.
 
