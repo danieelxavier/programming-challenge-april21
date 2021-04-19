@@ -22,6 +22,7 @@ As the used information is only for consultation, I thought it not necessary to 
 > I made a mistake when scripting data preprocessing using Python. When I reviewed the rules and saw that Python was not among the available technologies, there was no more time to fix it. My mistake.
 
 ### Running
+At directory  *"api/"*
 
 > This project uses *"movies.csv"* and *"ratings.csv"* files from [MovieLens](https://grouplens.org/datasets/movielens/) dataset. This dataset files is necessary.
 
@@ -38,6 +39,25 @@ As the used information is only for consultation, I thought it not necessary to 
 **This API project contain unit tests.**
 - Run unit tests
 `$ yarn test`
+
+### Usage
+- GET all movies:
+- Endpoint: `http://localhost:3333/movies`
+
+- GET a movie by id:
+`http://localhost:3333/movies/:id`
+
+- GET all movies by year:
+`http://localhost:3333/movies/:year`
+
+- GET all movies of a genre:
+`http://localhost:3333/movies/genre/:genre`
+
+- GET movies filtered by year and genre:
+`http://localhost:3333/movies/year/:year/genre/:genre`
+
+- GET top K movies by AVG rating:
+`http://localhost:3333/movies/top/:k`
 
 ## Front-end app
 
