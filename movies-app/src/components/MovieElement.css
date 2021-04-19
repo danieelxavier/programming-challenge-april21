@@ -1,0 +1,48 @@
+.movieElement {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+}
+
+.movieElement--title {
+    font-weight: bold;
+    font-size: 120%;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 0;
+    display: inline;
+}
+
+.movieElement--data {
+    color: #666;
+}
+
+.movieElement--data--sec {
+    margin-top: 5px;
+}
+
+.movieElement--data--label {
+    color: #222;
+}
+
+.movieElement--data--ratings {
+    color: #999;
+    font-size: 80%;
+}
+
+.movieElement--data--genresarea{
+    display: inline-table;
+}
+
+.movieElement--data--genre {
+    margin-right: 7px;
+    background-color: #ddd;
+    color: #666;
+    border-radius: 5px;
+    padding: 2px 7px 2px 7px;
+    font-size: 90%;
+}
