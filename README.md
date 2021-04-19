@@ -39,6 +39,25 @@ As the used information is only for consultation, I thought it not necessary to 
 - Run unit tests
 `$ yarn test`
 
+### Usage
+- GET all movies:
+- Endpoint: `http://localhost:3333/movies`
+
+- GET a movie by id:
+`http://localhost:3333/movies/:id`
+
+- GET all movies by year:
+`http://localhost:3333/movies/:year`
+
+- GET all movies of a genre:
+`http://localhost:3333/movies/genre/:genre`
+
+- GET movies filtered by year and genre:
+`http://localhost:3333/movies/year/:year/genre/:genre`
+
+- GET top K movies by AVG rating:
+`http://localhost:3333/movies/top/:k`
+
 ## Front-end app
 
 ### Overview
