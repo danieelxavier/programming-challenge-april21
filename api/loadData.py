@@ -1,5 +1,6 @@
 import sys
 import json
+import pathlib
 from json import JSONEncoder
 from csv import reader
 
@@ -81,6 +82,8 @@ for key, value in movies.items():
 print('Generate output data ...')
 moviesJsonStr = json.dumps(moviesList, indent=4, cls=Encoder)
 genresJsonStr = json.dumps(genres, indent=4, cls=Encoder)
+
+pathlib.Path('res').mkdir(parents=True, exist_ok=True)
 
 with open('res/movies.json', 'w') as f:
     f.writelines(moviesJsonStr)
