@@ -3,11 +3,6 @@ import json
 from json import JSONEncoder
 from csv import reader
 
-if (len(sys.argv) < 3):
-    print ('Missing argument')
-    print ('Example: yarn loadData <PATH_TO_DATASET_DIRECTORY>')
-
-path = sys.argv[2]
 
 class Movie:
     def __init__(self, movieId, title, genres, releaseYear):
@@ -23,6 +18,13 @@ class Encoder(JSONEncoder):
     def default(self, o):
         return o.__dict__
 
+
+if (len(sys.argv) < 3):
+    print('Missing argument')
+    print('Example: yarn load-data <PATH_TO_DATASET_DIRECTORY>')
+    exit()
+
+path = sys.argv[2]
 
 movies = {}
 ratings = {}
